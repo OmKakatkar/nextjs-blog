@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import Script from 'next/script'
 
 function FirstPost() {
   return (
@@ -8,6 +9,11 @@ function FirstPost() {
       <Head>
         <title>My first Post</title>
       </Head>
+      {/* <Script
+        src='https://connect.facebook.net/en_US/sdk.js'
+        strategy='lazyOnload'
+        onLoad={() => console.log(`script loading success`)}
+      /> */}
       <h1>My First Post is here....</h1>
       <Image
         alt='pfp'
