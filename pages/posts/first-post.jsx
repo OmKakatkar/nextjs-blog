@@ -2,10 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import Script from 'next/script'
+import Layout from '../../components/layout'
 
 function FirstPost() {
   return (
-    <>
+    <Layout>
       <Head>
         <title>My first Post</title>
       </Head>
@@ -24,7 +25,7 @@ function FirstPost() {
       <h2>
         <Link href='/'>Back Home</Link>
       </h2>
-    </>
+    </Layout>
   )
 }
 
